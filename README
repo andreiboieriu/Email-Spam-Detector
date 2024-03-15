@@ -1,0 +1,27 @@
+// Boieriu Andrei-Teodor 312CA
+
+Spam Detector Program in C
+
+The program predicts if an email is spam or not using the following criterias:
+
+- a keyword score based on the number of apparitions of words from the
+included keywords files and the standard deviation for each keyword
+
+- number of caps letters in email body
+
+- spammer score associated with the address the mail was sent from
+
+- number of markdowns (>) in email body
+
+Special criterias:
+
+- if the sender is "rssfeeds" the email is considered not spam
+
+- if "yahoo! groups sponsor" is found in body the email is considered not spam
+
+- if "email is sponsored by" is found in body the email is considered not spam
+
+- if "pgp signature" is found in body the email is considered not spam
+
+- if "Re:" is found in subject the email is considered not spam (not appliable
+for "RE:" and "re:")
